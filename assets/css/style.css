@@ -1,3 +1,9 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 html, body {
     margin: 0;
 }
@@ -14,23 +20,29 @@ body {
 }
 
 header, .container {
-    background: #D3D4D9;
+    background: #A7D49B;
 }
 
 header {
     height: 120px;
-    position: relative;
+    border-bottom: 3px solid #BC0200;
+}
+
+.header-title, nav {
+    position: absolute;
+    bottom: 0;
 }
 
 .header-title {
     background: #4A001F;
-    position: absolute;
-    bottom: 0;
+    padding: 20px 30px;
 }
 
 .header-content {
     width: 960px;
     margin: 0 auto;
+    position: relative;
+    height: inherit;
 }
 
 .header-content * {
@@ -38,11 +50,12 @@ header {
 }
 
 nav {
-    float: right;
+    right: 0;
+    margin-bottom: 20px;
 }
 
 nav li {
-    padding: 20px 30px;
+    padding-left: 20px;
 }
 
 a {
@@ -67,15 +80,61 @@ h1 {
 }
 
 h2 {
-    color: #D3D4D9;
+    color: #FFF;
     
 }
 
-.container {
+section {
     width: 960px;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: calc(100vh - 276px);
+}
+
+.container {
+    padding: 20px 30px;
+}
+
+hr {
+    height: 2px;
+    color: #BC0200;
+    background: #BC0200;
+    font-size: 0;
+    border: 0;
+    margin-bottom: 2rem;
+}
+
+#about-image {
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+}
+
+p {
+    line-height: 2rem;
+    margin-top: 0;
+    vertical-align: top;
+    
+}
+
+input[type="text"] {
+    width: calc(100% - 10px);
+    font-size: inherit;
+    height: 1.5rem;
+    padding: 5px;
 }
 
 footer {
     background: #2E0219;
+    border-top: 3px solid #BC0200;
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+}
+
+footer p {
+    vertical-align: bottom;
+    margin-bottom: 2px;
+    margin-top: 15px;
+    font-size: 0.8rem;
 }
