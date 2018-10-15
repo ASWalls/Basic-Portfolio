@@ -81,7 +81,11 @@ h1 {
 
 h2 {
     color: #FFF;
-    
+}
+
+h3 {
+    line-height: 1rem;
+    margin-bottom: 10px;
 }
 
 section {
@@ -117,11 +121,14 @@ p {
     
 }
 
-input[type="text"] {
-    width: calc(100% - 10px);
-    font-size: inherit;
+input[type="text"], textarea {
+    width: calc(100% - 12px);
     height: 1.5rem;
     padding: 5px;
+    font-size: inherit;
+    color: inherit;
+    border: 1px solid #BC0200;
+    margin-bottom: 10px;
 }
 
 footer {
