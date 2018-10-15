@@ -121,11 +121,24 @@ p {
     flex-wrap: wrap;
 }
 .project {
-    margin-right: 40px;
+    margin: 0 40px 60px 0;
+    position: relative;
+    text-align: center;
+}
+.title-box {
+    background: #4A001F;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 50px;
 }
 .project-title {
-    background: #4A001F;
+    
+    margin: auto;
+    margin-top: 15px;
     font-size: 1.5rem;
+    vertical-align: middle;
+    
 }
 
 /*End portfolio styles*/
@@ -165,5 +178,6 @@ footer p {
     margin-bottom: 2px;
     margin-top: 15px;
     font-size: 0.8rem;
+    width: 100%;
 }
 /*End footer styles*/
